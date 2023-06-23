@@ -189,6 +189,78 @@ body {
   flex-direction: column;
 }
 
+.modal {
+  background: var(--modal-back, rgba(51, 51, 51, 0.75));
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal .containerInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #FAFAFA;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  margin: 190px;
+}
+.modal .containerInput .tarif {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.modal .containerInput input[type=text] {
+  width: 90%;
+  margin-left: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #D4D4D4;
+  padding: 10px;
+  margin-top: 10px;
+}
+.modal .containerInput .price {
+  background-color: #D4D4D4;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal .container {
+  display: flex;
+  padding-top: 100px;
+  padding-left: 53px;
+}
+.modal .container .btnfirst {
+  color: #FAFAFA;
+  background: #333333;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal .container .btnfirst:hover {
+  cursor: pointer;
+}
+.modal .container .btntwo {
+  color: #333333;
+  background-color: #FFC702;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.modal .container .btntwo:hover {
+  cursor: pointer;
+}
+
 #app {
   width: 100%;
 }
@@ -609,14 +681,15 @@ body a {
 .wrapperrrr {
   display: flex;
 }
-.wrapperrrr .panel {
+.wrapperrrr .panell {
   background-color: #333333;
-  height: 100vh;
+  height: 100%;
   width: 200px;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
-.wrapperrrr .panel .circle {
+.wrapperrrr .panell .circle {
   background-color: #333333;
   border: 1px solid #FAFAFA;
   border-radius: 100%;
@@ -626,87 +699,87 @@ body a {
   margin-top: 20px;
   margin-left: 50px;
 }
-.wrapperrrr .panel .circle .admin {
+.wrapperrrr .panell .circle .admin {
   font-size: 12px;
   font-weight: 500;
   color: #FAFAFA;
   text-align: center;
   line-height: 15px;
 }
-.wrapperrrr .panel .container {
+.wrapperrrr .panell .container {
   margin-bottom: 360px;
 }
-.wrapperrrr .panel .container .tarif {
+.wrapperrrr .panell .container .tarif {
   display: flex;
   align-items: center;
   margin-left: 31px;
   margin-top: 70px;
 }
-.wrapperrrr .panel .container .tarif:hover {
+.wrapperrrr .panell .container .tarif:hover {
   cursor: pointer;
 }
-.wrapperrrr .panel .container .name {
+.wrapperrrr .panell .container .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 21px;
 }
-.wrapperrrr .panel .container .goods {
+.wrapperrrr .panell .container .goods {
   display: flex;
   align-items: center;
   margin-left: 19px;
   margin-top: 40px;
 }
-.wrapperrrr .panel .container .goods:hover {
+.wrapperrrr .panell .container .goods:hover {
   cursor: pointer;
 }
-.wrapperrrr .panel .container .goods .name {
+.wrapperrrr .panell .container .goods .name {
   font-size: 16px;
   font-weight: 500;
   color: #FFC702;
   margin-left: 13px;
 }
-.wrapperrrr .panel .container .order {
+.wrapperrrr .panell .container .order {
   display: flex;
   align-items: center;
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapperrrr .panel .container .order:hover {
+.wrapperrrr .panell .container .order:hover {
   cursor: pointer;
 }
-.wrapperrrr .panel .container .order .name {
+.wrapperrrr .panell .container .order .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
 }
-.wrapperrrr .panel .container .statistic {
+.wrapperrrr .panell .container .statistic {
   display: flex;
   align-items: center;
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapperrrr .panel .container .statistic:hover {
+.wrapperrrr .panell .container .statistic:hover {
   cursor: pointer;
 }
-.wrapperrrr .panel .container .statistic .name {
+.wrapperrrr .panell .container .statistic .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
 }
-.wrapperrrr .panel .exit {
+.wrapperrrr .panell .exit {
   display: flex;
   align-items: center;
   margin-left: 28px;
   position: relative;
   bottom: 30px;
 }
-.wrapperrrr .panel .exit:hover {
+.wrapperrrr .panell .exit:hover {
   cursor: pointer;
 }
-.wrapperrrr .panel .exit .name {
+.wrapperrrr .panell .exit .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
@@ -714,7 +787,7 @@ body a {
 }
 .wrapperrrr .table {
   margin-left: 50px;
-  margin-top: 130px;
+  margin-top: 20px;
   height: 64px;
   width: 1351px;
   background-color: #333333;
@@ -734,7 +807,7 @@ body a {
   margin-left: 330px;
 }
 .wrapperrrr .table .name:nth-child(3) {
-  margin-left: 370px;
+  margin-left: 380px;
 }
 .wrapperrrr .baseContainer {
   display: grid;
@@ -743,13 +816,13 @@ body a {
 }
 .wrapperrrr .baseContainer .base {
   border: 1px solid #8B8B8B;
-  text-align: center;
+  text-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
   font-weight: 700;
-  padding: 40px 7px;
+  padding: 25px 7px;
 }
 .wrapperrrr .baseContainer .base:nth-child(3) {
   text-align: start;
@@ -802,9 +875,9 @@ body a {
 }
 .wrapperrrr .containerproduct {
   display: flex;
-}
-.wrapperrrr .containerproduct .containerbutton {
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
 }
 .wrapperrrr .containerproduct .containerbutton .btn {
   background-color: #A93DFF;
@@ -821,8 +894,22 @@ body a {
   font-weight: 700;
 }
 .wrapperrrr .containerproduct .find {
+  margin-left: 50px;
   display: flex;
   align-items: center;
+  border: 1px solid #D4D4D4;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 10px 10px;
+  width: 1030px;
+}
+.wrapperrrr .containerproduct .find input[type=text] {
+  border: transparent;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #8B8B8B;
+  width: 1030px;
 }
 
 /*# sourceMappingURL=style.css.map */

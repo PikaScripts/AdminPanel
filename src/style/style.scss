@@ -202,7 +202,80 @@ body {
   }
 }
 
+.modal{
+  background: var(--modal-back, rgba(51, 51, 51, 0.75));
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .containerInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #FAFAFA;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 190px;
+    .tarif{
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 20px;
+      margin-bottom: 30px;
+    }
+    input[type=text]{
+      width: 90%;
+      margin-left: 11px;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 10px;
+      border: 1px solid #D4D4D4;
+      padding: 10px;
+      margin-top: 10px;
+      
+    }
+    .price{
+      background-color: #D4D4D4;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
 
+  .container{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 53px;
+    .btnfirst{
+      color: #FAFAFA;
+      background: #333333;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .btntwo{
+      color: #333333;
+      background-color: #FFC702;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      margin-left: 10px;
+      &:hover{
+        cursor: pointer
+      }
+    }
+  }
+
+}
 @import 'orders';
 @import 'statistic';
 @import 'products';

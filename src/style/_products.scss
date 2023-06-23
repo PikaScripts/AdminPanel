@@ -11,13 +11,13 @@
   
   .wrapperrrr{
     display: flex;
-    .panel{
+    .panell{
       background-color: #333333;
-      height: 100vh;
+      height: 100%;
       width: 200px;
       display: flex;
       flex-direction: column;
-      
+      padding-top: 40px;
       .circle{
         background-color: #333333;
         border: 1px solid #FAFAFA;
@@ -113,14 +113,14 @@
           font-weight: 500;
           color: #FAFAFA;
           margin-left: 18px;
-         
+          
         }
       }
      
     }
     .table{
       margin-left: 50px;
-      margin-top: 130px;
+      margin-top: 20px;
       height: 64px;
       width: 1351px;
       background-color: #333333;
@@ -140,7 +140,7 @@
           margin-left: 330px;
         }
         &:nth-child(3){
-          margin-left: 370px;
+          margin-left: 380px;
         }
         
         
@@ -152,20 +152,20 @@
       display: grid;
       grid-template-columns: 450px 450px 450px;
       margin-left: 51px;
-      
       .base{
         border: 1px solid #8B8B8B;
-        text-align: center;
+        text-align: start;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 20px;
         font-weight: 700;
-        padding: 40px 7px;
+        padding: 25px 7px;
         &:nth-child(3){
           
           text-align: start;
         }
+        
       }
       .container{
         display: flex;
@@ -173,12 +173,8 @@
         border: 1px solid #8B8B8B;
         align-items: center;
         .bases{
-          
-          
-          
           font-size: 20px;
           font-weight: 700;
-          
         }
         svg{
           padding-left: 15px;
@@ -218,13 +214,14 @@
           color: #333333;
         }
       }
-     
+    
     }
     .containerproduct{
         display: flex;
-        .containerbutton{
-            margin-top: 50px;
-            
+        align-items: center;
+        margin-top: 40px;
+        justify-content: space-between;
+        .containerbutton{   
             .btn{
               background-color: #A93DFF;
               padding: 15px 63px;
@@ -243,9 +240,22 @@
            
           }
           .find{
+            margin-left: 50px;
             display: flex;
             align-items: center;
-           
+            border: 1px solid #D4D4D4;
+            border-radius: 10px;
+            height: fit-content;
+            padding: 10px 10px;
+            width: 1030px;
+            input[type=text]{
+              border: transparent;
+              outline: none;
+              font-size: 20px;
+              font-weight: 500;
+              color: #8B8B8B;
+              width: 1030px;
+            }
           }
     }
   }
