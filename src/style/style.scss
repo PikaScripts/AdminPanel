@@ -173,8 +173,9 @@ body {
     display: grid;
     grid-template-columns: 290px 250px 330px 210px 219px;
     margin-left: 51px;
+    
     .base{
-      border: 1px solid #333333;
+      border: 1px solid #8B8B8B;
       padding: 25px 50px;
       text-align: center;
       font-size: 20px;
@@ -182,7 +183,7 @@ body {
     }
     .container{
       display: flex;
-      border: 1px solid #333333;
+      border: 1px solid #8B8B8B;
       justify-content: center;
       padding-top: 15px;
       svg{
@@ -195,7 +196,13 @@ body {
       }
     }
   }
+  .containerall{
+    display: flex;
+    flex-direction: column
+  }
 }
 
 
 @import 'orders';
+@import 'statistic';
+@import 'products';

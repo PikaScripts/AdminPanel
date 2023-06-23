@@ -9,7 +9,7 @@
     }
   }
   
-  .wrapperr{
+  .wrapperrrr{
     display: flex;
     .panel{
       background-color: #333333;
@@ -64,7 +64,7 @@
           .name{
             font-size: 16px;
             font-weight: 500;
-            color: #FAFAFA;
+            color: #FFC702;
             margin-left: 13px;
           }
         }
@@ -79,7 +79,7 @@
           .name{
             font-size: 16px;
             font-weight: 500;
-            color: #FFC702;
+            color: #FAFAFA;
             margin-left: 13px;
           }
         }
@@ -122,7 +122,7 @@
       margin-left: 50px;
       margin-top: 130px;
       height: 64px;
-      width: 1210px;
+      width: 1351px;
       background-color: #333333;
       border-radius: 5px 5px 0 0;
       display: flex;
@@ -133,18 +133,16 @@
         
         margin-top: 20px;
         &:first-child{
-          margin-left: 56px;
+          margin-left: 150px;
   
         }
         &:nth-child(2){
-          margin-left: 155.5px;
+          margin-left: 330px;
         }
         &:nth-child(3){
-          margin-left: 225px;
+          margin-left: 370px;
         }
-        &:nth-child(4){
-          margin-left: 200px;
-        }
+        
         
       }
     }
@@ -152,7 +150,7 @@
     
     .baseContainer{
       display: grid;
-      grid-template-columns: 315px 270px 350px 273px;
+      grid-template-columns: 450px 450px 450px;
       margin-left: 51px;
       
       .base{
@@ -221,6 +219,34 @@
         }
       }
      
+    }
+    .containerproduct{
+        display: flex;
+        .containerbutton{
+            margin-top: 50px;
+            
+            .btn{
+              background-color: #A93DFF;
+              padding: 15px 63px;
+              border: transparent;
+              border-radius: 5px;
+              &:hover{
+                cursor: pointer;
+              }
+              .btntext{
+                color: #FAFAFA;
+                font-size: 20px;
+                font-weight: 700;
+        
+              }
+            }
+           
+          }
+          .find{
+            display: flex;
+            align-items: center;
+           
+          }
     }
   }
   
