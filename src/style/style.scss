@@ -203,6 +203,9 @@ body {
 }
 
 .modal{
+  display: none;
+}
+.active{
   background: var(--modal-back, rgba(51, 51, 51, 0.75));
   height: 100%;
   position: absolute;
@@ -215,7 +218,7 @@ body {
     justify-content: start;
     background-color: #FAFAFA;
     width: 500px;
-    height: 500px;
+    height: 460px;
     border-radius: 10px;
     margin: 190px;
     .tarif{
@@ -247,11 +250,11 @@ body {
   .container{
     display: flex;
     padding-top: 100px;
-    padding-left: 53px;
+    padding-left: 24px;
     .btnfirst{
       color: #FAFAFA;
       background: #333333;
-      padding: 15px 50px;
+      padding: 15px 65px;
       border: none;
       border-radius: 5px;
       font-size: 20px;
@@ -263,7 +266,7 @@ body {
     .btntwo{
       color: #333333;
       background-color: #FFC702;
-      padding: 15px 50px;
+      padding: 15px 65px;
       border: none;
       border-radius: 5px;
       font-size: 20px;
@@ -274,7 +277,6 @@ body {
       }
     }
   }
-
 }
 @import 'orders';
 @import 'statistic';

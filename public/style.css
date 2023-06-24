@@ -190,6 +190,10 @@ body {
 }
 
 .modal {
+  display: none;
+}
+
+.active {
   background: var(--modal-back, rgba(51, 51, 51, 0.75));
   height: 100%;
   position: absolute;
@@ -197,24 +201,24 @@ body {
   display: flex;
   justify-content: center;
 }
-.modal .containerInput {
+.active .containerInput {
   display: flex;
   flex-direction: column;
   justify-content: start;
   background-color: #FAFAFA;
   width: 500px;
-  height: 500px;
+  height: 460px;
   border-radius: 10px;
   margin: 190px;
 }
-.modal .containerInput .tarif {
+.active .containerInput .tarif {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   padding-top: 20px;
   margin-bottom: 30px;
 }
-.modal .containerInput input[type=text] {
+.active .containerInput input[type=text] {
   width: 90%;
   margin-left: 11px;
   font-size: 20px;
@@ -224,40 +228,40 @@ body {
   padding: 10px;
   margin-top: 10px;
 }
-.modal .containerInput .price {
+.active .containerInput .price {
   background-color: #D4D4D4;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
 }
-.modal .container {
+.active .container {
   display: flex;
   padding-top: 100px;
-  padding-left: 53px;
+  padding-left: 24px;
 }
-.modal .container .btnfirst {
+.active .container .btnfirst {
   color: #FAFAFA;
   background: #333333;
-  padding: 15px 50px;
+  padding: 15px 65px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 700;
 }
-.modal .container .btnfirst:hover {
+.active .container .btnfirst:hover {
   cursor: pointer;
 }
-.modal .container .btntwo {
+.active .container .btntwo {
   color: #333333;
   background-color: #FFC702;
-  padding: 15px 50px;
+  padding: 15px 65px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 700;
   margin-left: 10px;
 }
-.modal .container .btntwo:hover {
+.active .container .btntwo:hover {
   cursor: pointer;
 }
 
@@ -683,11 +687,10 @@ body a {
 }
 .wrapperrrr .panell {
   background-color: #333333;
-  height: 100%;
+  height: 100vh;
   width: 200px;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
 }
 .wrapperrrr .panell .circle {
   background-color: #333333;
@@ -787,7 +790,7 @@ body a {
 }
 .wrapperrrr .table {
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 30px;
   height: 64px;
   width: 1351px;
   background-color: #333333;
@@ -822,7 +825,7 @@ body a {
   justify-content: center;
   font-size: 20px;
   font-weight: 700;
-  padding: 25px 7px;
+  padding: 20px 7px;
 }
 .wrapperrrr .baseContainer .base:nth-child(3) {
   text-align: start;
@@ -876,7 +879,7 @@ body a {
 .wrapperrrr .containerproduct {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 50px;
   justify-content: space-between;
 }
 .wrapperrrr .containerproduct .containerbutton .btn {

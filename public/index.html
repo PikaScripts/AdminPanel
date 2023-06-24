@@ -57,7 +57,7 @@
       </div>
       <div class="tabletarif">
          <div class="containerbutton">
-        <button class="btn"><h3 class="btntext">Добавить тариф</h3></button>
+        <button class="btn" onclick="addtarif()"><h3 class="btntext">Добавить тариф</h3></button>
       </div>
       <div class="table">
         <p class="name">Наименование</p>
@@ -124,16 +124,16 @@
      
       
     </div>
-    <div class="modal">
+    <div class="modal" >
       
       <div class="containerInput">
         <h4 class="tarif">Добавить тариф</h4>
-        <input type="text" placeholder="Название тарифа">
-      <input type="text" placeholder="Кол-во лицензий">
-      <input type="text" placeholder="Кол-во треков">
+        <input type="text" placeholder="Название тарифа" class="name">
+      <input type="text" placeholder="Кол-во лицензий" class="license">
+      <input type="text" placeholder="Кол-во треков" class="track">
       <input type="text" placeholder="0₸" class="price">
       <div class="container">
-        <button class="btnfirst">Закрыть </button>
+        <button class="btnfirst" onclick="closemodal()">Закрыть </button>
         <button class="btntwo">Добавить </button>
       </div>
       </div>
@@ -141,8 +141,9 @@
     
 
     </div>
+   
     
-    
+    <script src="./script.js"></script>
     <script src="bundle.js" type="module"></script>
   </body>
 </html>
