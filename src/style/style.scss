@@ -141,7 +141,7 @@ body {
         margin-left: 117.5px;
       }
       &:nth-child(4){
-        margin-left: 125px;
+        margin-left: 140px;
       }
       &:nth-child(5){
         margin-left: 157px;
@@ -292,3 +292,36 @@ body {
 @import 'orders';
 @import 'statistic';
 @import 'products';
+
+
+
+
+
+
+
+.baseContainerr{
+  display: grid;
+  grid-template-columns: 290px 250px 330px 210px 219px;
+  margin-left: 0px;
+  .base{
+    border: 1px solid #8B8B8B;
+    padding: 25px 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .container{
+    display: flex;
+    border: 1px solid #8B8B8B;
+    justify-content: center;
+    padding-top: 15px;
+    svg{
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .delete{
+      padding-left: 5px;
+    }
+  }
+}

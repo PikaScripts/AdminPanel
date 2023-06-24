@@ -128,13 +128,13 @@
       
       <div class="containerInput">
         <h4 class="tarif">Добавить тариф</h4>
-        <input type="text" placeholder="Название тарифа" class="name" onkeypress="noDigits(event)">
+        <input type="text" placeholder="Название тарифа" class="names" onkeypress="noDigits(event)">
       <input type="number" placeholder="Кол-во лицензий" class="license">
       <input type="number" placeholder="Кол-во треков" class="track">
       <input type="text" placeholder="0₸" class="price" readonly>
       <div class="container">
         <button class="btnfirst" onclick="closemodal()">Закрыть </button>
-        <button class="btntwo" onclick="addition()">Добавить </button>
+        <button class="btntwo" onclick="addition(this)">Добавить </button>
       </div>
       </div>
       
