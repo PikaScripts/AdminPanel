@@ -924,6 +924,9 @@ body a {
   color: #8B8B8B;
   width: 1030px;
 }
+.wrapperrrr .containerproduct .find:focus {
+  outline: auto;
+}
 
 .baseContainerr {
   display: grid;

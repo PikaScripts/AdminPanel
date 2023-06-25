@@ -248,6 +248,7 @@
             height: fit-content;
             padding: 10px 10px;
             width: 1030px;
+            
             input[type=text]{
               border: transparent;
               outline: none;
@@ -255,8 +256,16 @@
               font-weight: 500;
               color: #8B8B8B;
               width: 1030px;
+              
             }
+             
+            
+            
           }
+          .find:focus{
+            outline: auto;
+          }
+         
     }
   }
   
