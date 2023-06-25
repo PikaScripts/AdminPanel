@@ -70,7 +70,7 @@
                       
             </div>
             <div class="containerbutton">
-            <button class="btn"><h3 class="btntext">Добавить тариф</h3></button>
+            <button class="btn" onclick="addtarif()"><h3 class="btntext">Добавить тариф</h3></button>
           </div>
           </div>
           
@@ -334,7 +334,25 @@
      
       
     </div>
+
+
+    <div class="modals" >
+      
+      <div class="containerInput">
+        <h4 class="tarif">Добавить тариф</h4>
+        <input type="text" placeholder="Наименование" class="names" onkeypress="noDigits(event)">
+      <input type="number" placeholder="Цена" class="license" >
+      
+      
+      <div class="container">
+        <button class="btnfirst" onclick="closemodal()">Закрыть </button>
+        <button class="btntwo" onclick="addition(this)">Добавить </button>
+      </div>
+      </div>
+      
     
+
+    </div>
     
     <script src="./product.js"></script>
     <script src="bundle.js" type="module"></script>

@@ -36,7 +36,7 @@ const addition = () => {
       
       return;
   }
-    let container = document.querySelector('.dobav');
+    let container = document.querySelector('.add');
     let containerInput = [
         {
           names: inputname.value,
