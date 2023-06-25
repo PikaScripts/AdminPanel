@@ -30,7 +30,7 @@ let inputprice = document.querySelector('.modal .containerInput .price')
 const addition = () => {
     let inputtrackvalue = parseFloat(inputtrack.value);
     let inputlicensevalue = parseFloat(inputlicense.value);
-    let container = document.querySelector('.baseContainer');
+    let container = document.querySelector('.dobav');
     let containerInput = [
         {
           names: inputname.value,
@@ -59,7 +59,9 @@ const addition = () => {
                           
         </div>
       </div>`;
+      container.style = 'margin-left: 51px;'
       container.innerHTML += newcontainerInput
+      
     })
     modal.classList.add('modal')
     modal.classList.remove('active')
