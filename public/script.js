@@ -30,6 +30,12 @@ let inputprice = document.querySelector('.modal .containerInput .price')
 const addition = () => {
     let inputtrackvalue = parseFloat(inputtrack.value);
     let inputlicensevalue = parseFloat(inputlicense.value);
+    let inputnamevalue = inputname.value
+    if (!inputtrackvalue || !inputlicensevalue || inputnamevalue.trim().length === 0) {
+      
+      
+      return;
+  }
     let container = document.querySelector('.dobav');
     let containerInput = [
         {
@@ -39,7 +45,7 @@ const addition = () => {
           price: inputprice.value,
         },
       ];
-
+      
       containerInput.forEach((item) => {
         let newcontainerInput = `<div class="baseContainerr">
         <p class="base">${item.names}</p>
@@ -59,12 +65,15 @@ const addition = () => {
                           
         </div>
       </div>`;
+      
       container.style = 'margin-left: 51px;'
       container.innerHTML += newcontainerInput
       
     })
-    modal.classList.add('modal')
-    modal.classList.remove('active')
+    
+
+      modal.classList.add('modal')
+      modal.classList.remove('active')
     
 }
 

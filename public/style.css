@@ -41,15 +41,17 @@ body {
   align-items: center;
   margin-left: 31px;
   margin-top: 70px;
-}
-.wrapper .panel .container .tarif:hover {
-  cursor: pointer;
+  transition: 400ms;
 }
 .wrapper .panel .container .name {
   font-size: 16px;
   font-weight: 500;
   color: #FFC702;
   margin-left: 21px;
+  transition: 300ms;
+}
+.wrapper .panel .container .name:hover {
+  cursor: pointer;
 }
 .wrapper .panel .container .goods {
   display: flex;
@@ -57,14 +59,15 @@ body {
   margin-left: 19px;
   margin-top: 40px;
 }
-.wrapper .panel .container .goods:hover {
-  cursor: pointer;
-}
 .wrapper .panel .container .goods .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
+  transition: 300ms;
+}
+.wrapper .panel .container .goods .name:hover {
+  cursor: pointer;
 }
 .wrapper .panel .container .order {
   display: flex;
@@ -72,14 +75,15 @@ body {
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapper .panel .container .order:hover {
-  cursor: pointer;
-}
 .wrapper .panel .container .order .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
+  transition: 300ms;
+}
+.wrapper .panel .container .order .name:hover {
+  cursor: pointer;
 }
 .wrapper .panel .container .statistic {
   display: flex;
@@ -87,14 +91,15 @@ body {
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapper .panel .container .statistic:hover {
-  cursor: pointer;
-}
 .wrapper .panel .container .statistic .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
+  transition: 300ms;
+}
+.wrapper .panel .container .statistic .name:hover {
+  cursor: pointer;
 }
 .wrapper .panel .exit {
   display: flex;
@@ -103,14 +108,15 @@ body {
   position: relative;
   bottom: 30px;
 }
-.wrapper .panel .exit:hover {
-  cursor: pointer;
-}
 .wrapper .panel .exit .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 18px;
+  transition: 300ms;
+}
+.wrapper .panel .exit .name:hover {
+  cursor: pointer;
 }
 .wrapper .table {
   margin-left: 50px;
@@ -322,14 +328,14 @@ body a {
   margin-left: 31px;
   margin-top: 70px;
 }
-.wrapperr .panel .container .tarif:hover {
-  cursor: pointer;
-}
 .wrapperr .panel .container .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 21px;
+}
+.wrapperr .panel .container .name:hover {
+  cursor: pointer;
 }
 .wrapperr .panel .container .goods {
   display: flex;
@@ -337,14 +343,14 @@ body a {
   margin-left: 19px;
   margin-top: 40px;
 }
-.wrapperr .panel .container .goods:hover {
-  cursor: pointer;
-}
 .wrapperr .panel .container .goods .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
+}
+.wrapperr .panel .container .goods .name:hover {
+  cursor: pointer;
 }
 .wrapperr .panel .container .order {
   display: flex;
@@ -352,14 +358,14 @@ body a {
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapperr .panel .container .order:hover {
-  cursor: pointer;
-}
 .wrapperr .panel .container .order .name {
   font-size: 16px;
   font-weight: 500;
   color: #FFC702;
   margin-left: 13px;
+}
+.wrapperr .panel .container .order .name:hover {
+  cursor: pointer;
 }
 .wrapperr .panel .container .statistic {
   display: flex;
@@ -367,14 +373,14 @@ body a {
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapperr .panel .container .statistic:hover {
-  cursor: pointer;
-}
 .wrapperr .panel .container .statistic .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
+}
+.wrapperr .panel .container .statistic .name:hover {
+  cursor: pointer;
 }
 .wrapperr .panel .exit {
   display: flex;
@@ -383,14 +389,14 @@ body a {
   position: relative;
   bottom: 30px;
 }
-.wrapperr .panel .exit:hover {
-  cursor: pointer;
-}
 .wrapperr .panel .exit .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 18px;
+}
+.wrapperr .panel .exit .name:hover {
+  cursor: pointer;
 }
 .wrapperr .table {
   margin-left: 50px;
@@ -531,14 +537,14 @@ body a {
   margin-left: 31px;
   margin-top: 70px;
 }
-.wrapperrr .panel .container .tarif:hover {
-  cursor: pointer;
-}
 .wrapperrr .panel .container .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 21px;
+}
+.wrapperrr .panel .container .name:hover {
+  cursor: pointer;
 }
 .wrapperrr .panel .container .goods {
   display: flex;
@@ -555,14 +561,14 @@ body a {
   color: #FAFAFA;
   margin-left: 13px;
 }
+.wrapperrr .panel .container .goods .name:hover {
+  cursor: pointer;
+}
 .wrapperrr .panel .container .order {
   display: flex;
   align-items: center;
   margin-left: 17px;
   margin-top: 40px;
-}
-.wrapperrr .panel .container .order:hover {
-  cursor: pointer;
 }
 .wrapperrr .panel .container .order .name {
   font-size: 16px;
@@ -570,20 +576,23 @@ body a {
   color: #FAFAFA;
   margin-left: 13px;
 }
+.wrapperrr .panel .container .order .name:hover {
+  cursor: pointer;
+}
 .wrapperrr .panel .container .statistic {
   display: flex;
   align-items: center;
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapperrr .panel .container .statistic:hover {
-  cursor: pointer;
-}
 .wrapperrr .panel .container .statistic .name {
   font-size: 16px;
   font-weight: 500;
   color: #FFC702;
   margin-left: 13px;
+}
+.wrapperrr .panel .container .statistic .name:hover {
+  cursor: pointer;
 }
 .wrapperrr .panel .exit {
   display: flex;
@@ -592,14 +601,14 @@ body a {
   position: relative;
   bottom: 30px;
 }
-.wrapperrr .panel .exit:hover {
-  cursor: pointer;
-}
 .wrapperrr .panel .exit .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 18px;
+}
+.wrapperrr .panel .exit .name:hover {
+  cursor: pointer;
 }
 .wrapperrr .containerStatistic {
   display: flex;
@@ -728,14 +737,14 @@ body a {
   margin-left: 31px;
   margin-top: 70px;
 }
-.wrapperrrr .panell .container .tarif:hover {
-  cursor: pointer;
-}
 .wrapperrrr .panell .container .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 21px;
+}
+.wrapperrrr .panell .container .name:hover {
+  cursor: pointer;
 }
 .wrapperrrr .panell .container .goods {
   display: flex;
@@ -743,14 +752,14 @@ body a {
   margin-left: 19px;
   margin-top: 40px;
 }
-.wrapperrrr .panell .container .goods:hover {
-  cursor: pointer;
-}
 .wrapperrrr .panell .container .goods .name {
   font-size: 16px;
   font-weight: 500;
   color: #FFC702;
   margin-left: 13px;
+}
+.wrapperrrr .panell .container .goods .name:hover {
+  cursor: pointer;
 }
 .wrapperrrr .panell .container .order {
   display: flex;
@@ -758,14 +767,14 @@ body a {
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapperrrr .panell .container .order:hover {
-  cursor: pointer;
-}
 .wrapperrrr .panell .container .order .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
+}
+.wrapperrrr .panell .container .order .name:hover {
+  cursor: pointer;
 }
 .wrapperrrr .panell .container .statistic {
   display: flex;
@@ -773,14 +782,14 @@ body a {
   margin-left: 17px;
   margin-top: 40px;
 }
-.wrapperrrr .panell .container .statistic:hover {
-  cursor: pointer;
-}
 .wrapperrrr .panell .container .statistic .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 13px;
+}
+.wrapperrrr .panell .container .statistic .name:hover {
+  cursor: pointer;
 }
 .wrapperrrr .panell .exit {
   display: flex;
@@ -789,14 +798,14 @@ body a {
   position: relative;
   bottom: 30px;
 }
-.wrapperrrr .panell .exit:hover {
-  cursor: pointer;
-}
 .wrapperrrr .panell .exit .name {
   font-size: 16px;
   font-weight: 500;
   color: #FAFAFA;
   margin-left: 18px;
+}
+.wrapperrrr .panell .exit .name:hover {
+  cursor: pointer;
 }
 .wrapperrrr .table {
   margin-left: 50px;

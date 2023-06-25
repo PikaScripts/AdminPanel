@@ -40,30 +40,36 @@ body {
         align-items: center;
         margin-left: 31px;
         margin-top: 70px;
-        &:hover{
-          cursor: pointer;
-        }
+        transition: 400ms;
+
       }
       .name{
         font-size: 16px;
         font-weight: 500;
         color: #FFC702;
         margin-left: 21px;
-        
+        transition: 300ms;
+       &:hover{
+        cursor: pointer;
+       }
+       
       }
       .goods{
         display: flex;
         align-items: center;
         margin-left: 19px;
         margin-top: 40px;
-        &:hover{
-          cursor: pointer
-        }
+       
+        
         .name{
           font-size: 16px;
           font-weight: 500;
           color: #FAFAFA;
           margin-left: 13px;
+          transition: 300ms;
+         &:hover{
+          cursor: pointer;
+         }
         }
       }
       .order{
@@ -71,14 +77,16 @@ body {
         align-items: center;
         margin-left: 17px;
         margin-top: 40px;
-        &:hover{
-          cursor: pointer
-        }
+        
         .name{
           font-size: 16px;
           font-weight: 500;
           color: #FAFAFA;
           margin-left: 13px;
+          transition: 300ms;
+          &:hover{
+            cursor: pointer;
+           }
         }
       }
       .statistic{
@@ -86,14 +94,16 @@ body {
         align-items: center;
         margin-left: 17px;
         margin-top: 40px;
-        &:hover{
-          cursor: pointer
-        }
+       
         .name{
           font-size: 16px;
           font-weight: 500;
           color: #FAFAFA;
-          margin-left: 13px;
+          margin-left: 13px; 
+          transition: 300ms;
+          &:hover{
+            cursor: pointer;
+           }
         }
       }
     }
@@ -103,15 +113,16 @@ body {
       margin-left: 28px;
       position: relative;
       bottom: 30px;
-      &:hover{
-        cursor: pointer
-      }
+      
       .name{
         font-size: 16px;
         font-weight: 500;
         color: #FAFAFA;
         margin-left: 18px;
-       
+        transition: 300ms;
+        &:hover{
+          cursor: pointer;
+         }
       }
     }
    
@@ -212,6 +223,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  
   .containerInput{
     display: flex;
     flex-direction: column;
