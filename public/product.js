@@ -23,13 +23,13 @@ function noDigits(event) {
 
 let modalactive = document.querySelector('.actives')
 let openmodal = document.querySelector('.wrapperrrr .containerproduct .containerbutton .btn')
-let modal = document.querySelector('.modals')
+let modal = document.querySelector('.modalsadd')
 let modalbtn = document.querySelector('.btntwo')
 const addtarif = () =>{
     inputname.value = "";
     inputprice.value = "";
     
-    modal.classList.remove('modals')
+    modal.classList.remove('modalsadd')
     modal.classList.add('actives')
     if(modal.classList.contains('actives')){
         document.body.style = 'overflow: hidden'
@@ -45,13 +45,13 @@ modalbtn.addEventListener('click', function(){
 
 const closemodal = () =>{
     modal.classList.remove('actives')
-    modal.classList.add('modals')
+    modal.classList.add('modalsadd')
     document.body.style = 'overflow: auto'
 }
 
 
-let inputname = document.querySelector('.modals .containerInput .names')
-let inputprice = document.querySelector('.modals .containerInput .price')
+let inputname = document.querySelector('.modalsadd .containerInput .names')
+let inputprice = document.querySelector('.modalsadd .containerInput .price')
 
 const addition = () => {
     
@@ -100,7 +100,7 @@ const addition = () => {
     })
     
     
-      modal.classList.add('modals')
+      modal.classList.add('modalsadd')
       modal.classList.remove('actives')
       
 }
