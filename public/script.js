@@ -1,6 +1,7 @@
 let modalactive = document.querySelector('.active')
 let openmodal = document.querySelector('.wrapper .containerbutton .btn')
 let modal = document.querySelector('.modal')
+let modalbtn = document.querySelector('.btntwo')
 const addtarif = () =>{
     inputname.value = "";
     inputlicense.value = "";
@@ -8,8 +9,16 @@ const addtarif = () =>{
     inputprice.value = "";
     modal.classList.remove('modal')
     modal.classList.add('active')
-    
+    if(modal.classList.contains('active')){
+      document.body.style = 'overflow: hidden'
+  } else{
+      document.body.style = 'overflow: auto'
+  }
 }
+
+modalbtn.addEventListener('click', function(){
+  document.body.style = 'overflow: auto'
+})
 
 function noDigits(event) {
     if ("1234567890".indexOf(event.key) != -1)
