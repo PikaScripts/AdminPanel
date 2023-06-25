@@ -254,17 +254,19 @@
               outline: none;
               font-size: 20px;
               font-weight: 500;
-              color: #8B8B8B;
+              color: #333333;
               width: 1030px;
-              
+              &::placeholder{
+                color: #8B8B8B;
+              }
             }
              
             
-            
+            .activesvg{
+              display: none;
+            }
           }
-          .find:focus{
-            outline: auto;
-          }
+          
          
     }
   }
