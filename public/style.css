@@ -199,78 +199,15 @@ body {
   display: none;
 }
 
-.modaledit {
-  display: none;
-}
-
-.modaldelete {
-  display: none;
-}
-.modaldelete .active {
+.activeadd {
   background: var(--modal-back, rgba(51, 51, 51, 0.75));
   height: 100%;
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.modaldelete .active .containerInput {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  background-color: #FAFAFA;
-  width: 500px;
-  height: 260px;
-  border-radius: 10px;
-  margin: 190px;
-}
-.modaldelete .active .containerInput .tarif {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  padding-top: 20px;
-  margin-bottom: 30px;
-}
-.modaldelete .active .container {
-  display: flex;
-  padding-top: 100px;
-  padding-left: 24px;
-}
-.modaldelete .active .container .btnfirst {
-  color: #FAFAFA;
-  background: #333333;
-  padding: 15px 65px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 700;
-}
-.modaldelete .active .container .btnfirst:hover {
-  cursor: pointer;
-}
-.modaldelete .active .container .btntwo {
-  color: #333333;
-  background-color: #FFC702;
-  padding: 15px 65px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 700;
-  margin-left: 10px;
-}
-.modaldelete .active .container .btntwo:hover {
-  cursor: pointer;
-}
-
-.active {
-  background: var(--modal-back, rgba(51, 51, 51, 0.75));
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.active .containerInput {
+.activeadd .containerInput {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -280,14 +217,14 @@ body {
   border-radius: 10px;
   margin: 190px;
 }
-.active .containerInput .tarif {
+.activeadd .containerInput .tarif {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   padding-top: 20px;
   margin-bottom: 30px;
 }
-.active .containerInput input[type=text] {
+.activeadd .containerInput input[type=text] {
   width: 90%;
   margin-left: 11px;
   font-size: 20px;
@@ -297,7 +234,7 @@ body {
   padding: 10px;
   margin-top: 10px;
 }
-.active .containerInput input[type=number] {
+.activeadd .containerInput input[type=number] {
   width: 90%;
   margin-left: 11px;
   font-size: 20px;
@@ -307,18 +244,18 @@ body {
   padding: 10px;
   margin-top: 10px;
 }
-.active .containerInput .price {
+.activeadd .containerInput .price {
   background-color: #D4D4D4;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
 }
-.active .container {
+.activeadd .container {
   display: flex;
   padding-top: 100px;
   padding-left: 24px;
 }
-.active .container .btnfirst {
+.activeadd .container .btnfirst {
   color: #FAFAFA;
   background: #333333;
   padding: 15px 65px;
@@ -327,10 +264,10 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
-.active .container .btnfirst:hover {
+.activeadd .container .btnfirst:hover {
   cursor: pointer;
 }
-.active .container .btntwo {
+.activeadd .container .btntwo {
   color: #333333;
   background-color: #FFC702;
   padding: 15px 65px;
@@ -340,7 +277,152 @@ body {
   font-weight: 700;
   margin-left: 10px;
 }
-.active .container .btntwo:hover {
+.activeadd .container .btntwo:hover {
+  cursor: pointer;
+}
+
+.modaledit {
+  display: none;
+}
+
+.activeedit {
+  background: var(--modal-back, rgba(51, 51, 51, 0.75));
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.activeedit .containerInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #FAFAFA;
+  width: 500px;
+  height: 460px;
+  border-radius: 10px;
+  margin: 190px;
+}
+.activeedit .containerInput .tarif {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.activeedit .containerInput input[type=text] {
+  width: 90%;
+  margin-left: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #D4D4D4;
+  padding: 10px;
+  margin-top: 10px;
+}
+.activeedit .containerInput input[type=number] {
+  width: 90%;
+  margin-left: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #D4D4D4;
+  padding: 10px;
+  margin-top: 10px;
+}
+.activeedit .containerInput .price {
+  background-color: #D4D4D4;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.activeedit .container {
+  display: flex;
+  padding-top: 100px;
+  padding-left: 24px;
+}
+.activeedit .container .btnfirst {
+  color: #FAFAFA;
+  background: #333333;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.activeedit .container .btnfirst:hover {
+  cursor: pointer;
+}
+.activeedit .container .btntwo {
+  color: #333333;
+  background-color: #FFC702;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.activeedit .container .btntwo:hover {
+  cursor: pointer;
+}
+
+.modaldelete {
+  display: none;
+}
+
+.activedelete {
+  background: var(--modal-back, rgba(51, 51, 51, 0.75));
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.activedelete .containerInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #FAFAFA;
+  width: 500px;
+  height: 148px;
+  border-radius: 10px;
+  margin-top: 350px;
+}
+.activedelete .containerInput .tarif {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.activedelete .container {
+  display: flex;
+  padding-left: 24px;
+}
+.activedelete .container .btnfirst {
+  color: #FAFAFA;
+  background: #333333;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.activedelete .container .btnfirst:hover {
+  cursor: pointer;
+}
+.activedelete .container .btntwo {
+  color: #333333;
+  background-color: #FFC702;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.activedelete .container .btntwo:hover {
   cursor: pointer;
 }
 
@@ -1079,6 +1161,91 @@ body a {
   margin-left: 10px;
 }
 .actives .container .btntwo:hover {
+  cursor: pointer;
+}
+
+.wrarer {
+  width: 100%;
+  height: 100%;
+  background-color: #00CA69;
+}
+.wrarer .container {
+  margin-top: 50px;
+  width: 100%;
+}
+.wrarer .container .logo {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #FAFAFA;
+  border-radius: 100%;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+.wrarer .container .logo .caption {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #FAFAFA;
+  padding-top: 33%;
+}
+.wrarer .container .modals {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+.wrarer .container .modals .modalwindow {
+  background-color: #FAFAFA;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.wrarer .container .modals .modalwindow h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 35px;
+}
+.wrarer .container .modals .modalwindow .text {
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #D4D4D4;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+.wrarer .container .modals .modalwindow .text:focus {
+  outline: auto;
+}
+.wrarer .container .modals .modalwindow .pas {
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #D4D4D4;
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrarer .container .modals .modalwindow .pas:focus {
+  outline: auto;
+}
+.wrarer .container .modals .modalwindow .btn {
+  color: #FAFAFA;
+  background-color: #A93DFF;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px;
+  border: none;
+  margin-top: 45px;
+}
+.wrarer .container .modals .modalwindow .btn:hover {
   cursor: pointer;
 }
 

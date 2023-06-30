@@ -1,0 +1,87 @@
+.wrarer{
+    width: 100%;
+    height: 100%;
+    background-color: #00CA69;
+    .container{
+        margin-top: 50px;
+        width: 100%;
+        .logo{
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            border: 4px solid #FAFAFA;
+            border-radius: 100%;
+            margin: 0 auto;
+            padding: 10px 10px;
+            .caption{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+                color: #FAFAFA;
+                padding-top: 33%;
+                
+            }
+        }
+        .modals{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 90px;
+            .modalwindow{
+                background-color: #FAFAFA;
+            width: 500px;
+            padding: 20px;
+            border-radius: 20px;
+            height: 250px;
+            display: flex;
+            
+            flex-direction: column;
+            h3{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 35px;
+            }
+            .text{
+                outline: none;
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid #D4D4D4;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 13px;
+                &:focus{
+                    outline: auto;
+                }
+            }
+            .pas{
+                outline: none;
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid #D4D4D4;
+                font-size: 20px;
+                font-weight: 500;
+                &:focus{
+                    outline: auto;
+                }
+            }
+            .btn{
+                color: #FAFAFA;
+                background-color: #A93DFF;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+                padding: 15px ;
+                border: none;
+                margin-top: 45px;
+                &:hover{
+                    cursor: pointer;
+                }
+
+            }
+            }
+        }
+    }
+}
