@@ -6,6 +6,10 @@ body {
   flex-direction: column;
 }
 
+.tabletarif {
+  margin-left: 200px;
+}
+
 .wrapper {
   display: flex;
 }
@@ -15,6 +19,7 @@ body {
   width: 200px;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 .wrapper .panel .circle {
   background-color: #333333;
@@ -299,9 +304,9 @@ body {
   justify-content: start;
   background-color: #FAFAFA;
   width: 500px;
-  height: 460px;
+  height: 400px;
   border-radius: 10px;
-  margin: 190px;
+  margin: 220px;
 }
 .activeedit .containerInput .tarif {
   text-align: center;
@@ -385,7 +390,7 @@ body {
   justify-content: start;
   background-color: #FAFAFA;
   width: 500px;
-  height: 148px;
+  height: 140px;
   border-radius: 10px;
   margin-top: 350px;
 }
@@ -547,7 +552,7 @@ body a {
   margin-left: 50px;
   margin-top: 130px;
   height: 64px;
-  width: 1210px;
+  width: 1290px;
   background-color: #333333;
   border-radius: 5px 5px 0 0;
   display: flex;
@@ -562,17 +567,17 @@ body a {
   margin-left: 56px;
 }
 .wrapperr .table .name:nth-child(2) {
-  margin-left: 155.5px;
+  margin-left: 210.5px;
 }
 .wrapperr .table .name:nth-child(3) {
   margin-left: 225px;
 }
 .wrapperr .table .name:nth-child(4) {
-  margin-left: 200px;
+  margin-left: 225px;
 }
 .wrapperr .baseContainer {
   display: grid;
-  grid-template-columns: 315px 270px 350px 273px;
+  grid-template-columns: 315px 350px 350px 273px;
   margin-left: 51px;
 }
 .wrapperr .baseContainer .base {
@@ -595,8 +600,12 @@ body a {
   align-items: center;
 }
 .wrapperr .baseContainer .container .bases {
+  display: block;
   font-size: 20px;
   font-weight: 700;
+}
+.wrapperr .baseContainer .container .izmen {
+  display: block;
 }
 .wrapperr .baseContainer .container svg {
   padding-left: 15px;
@@ -633,6 +642,159 @@ body a {
   font-size: 20px;
   font-weight: 700;
   color: #333333;
+}
+
+.baseContainer .menus {
+  position: absolute;
+  top: 230px;
+  display: none;
+}
+.baseContainer .menus .containerme {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--dark, #333);
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+.baseContainer .menus .containerme:hover {
+  cursor: pointer;
+}
+.baseContainer .menus .containerme p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.baseContainer .menus .containerme svg {
+  margin-left: 50px;
+}
+.baseContainer .menus .dropdown {
+  background-color: var(--dark, #333);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+}
+.baseContainer .menus .dropdown p {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.baseContainer .menus .dropdown p:last-child {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+.baseContainer .menus .dropdown p:hover {
+  cursor: pointer;
+}
+.baseContainer .menus .dropdown .line {
+  width: 250px;
+  height: 2px;
+  margin-top: 13px;
+  background-color: #FFFFFF;
+}
+
+.baseContainer .menusa {
+  position: absolute;
+  top: 360px;
+  display: none;
+}
+.baseContainer .menusa .containerme {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--dark, #333);
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+.baseContainer .menusa .containerme:hover {
+  cursor: pointer;
+}
+.baseContainer .menusa .containerme p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.baseContainer .menusa .containerme svg {
+  margin-left: 50px;
+}
+.baseContainer .menusa .dropdown {
+  background-color: var(--dark, #333);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+}
+.baseContainer .menusa .dropdown p {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.baseContainer .menusa .dropdown p:last-child {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+.baseContainer .menusa .dropdown p:hover {
+  cursor: pointer;
+}
+.baseContainer .menusa .dropdown .line {
+  width: 250px;
+  height: 2px;
+  margin-top: 13px;
+  background-color: #FFFFFF;
+}
+
+.baseContainer .menusaa {
+  position: absolute;
+  top: 500px;
+  display: none;
+}
+.baseContainer .menusaa .containerme {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--dark, #333);
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+.baseContainer .menusaa .containerme:hover {
+  cursor: pointer;
+}
+.baseContainer .menusaa .containerme p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.baseContainer .menusaa .containerme svg {
+  margin-left: 50px;
+}
+.baseContainer .menusaa .dropdown {
+  background-color: var(--dark, #333);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+}
+.baseContainer .menusaa .dropdown p {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.baseContainer .menusaa .dropdown p:last-child {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+.baseContainer .menusaa .dropdown p:hover {
+  cursor: pointer;
+}
+.baseContainer .menusaa .dropdown .line {
+  width: 250px;
+  height: 2px;
+  margin-top: 13px;
+  background-color: #FFFFFF;
 }
 
 #app {
@@ -846,6 +1008,10 @@ body a {
   text-decoration: none;
 }
 
+.containerall {
+  margin-left: 200px;
+}
+
 .wrapperrrr {
   display: flex;
 }
@@ -855,6 +1021,7 @@ body a {
   width: 200px;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 .wrapperrrr .panell .circle {
   background-color: #333333;
@@ -986,6 +1153,7 @@ body a {
   text-align: start;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 20px;
   font-weight: 700;
   padding: 20px 7px;
@@ -1161,6 +1329,147 @@ body a {
   margin-left: 10px;
 }
 .actives .container .btntwo:hover {
+  cursor: pointer;
+}
+
+.modalsedit {
+  display: none;
+}
+
+.activeedit {
+  background: var(--modal-back, rgba(51, 51, 51, 0.75));
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.activeedit .containerInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FAFAFA;
+  width: 500px;
+  height: 295px;
+  border-radius: 10px;
+  margin: 280px;
+}
+.activeedit .containerInputs .tarif {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.activeedit .containerInputs input[type=text] {
+  width: 90%;
+  margin-left: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #D4D4D4;
+  padding: 10px;
+  margin-top: 10px;
+}
+.activeedit .containerInputs .price {
+  width: 90%;
+  margin-left: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #D4D4D4;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #FAFAFA;
+  text-align: start;
+}
+.activeedit .container {
+  display: flex;
+  padding-top: 25px;
+  padding-left: 24px;
+}
+.activeedit .container .btnfirst {
+  color: #FAFAFA;
+  background: #333333;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.activeedit .container .btnfirst:hover {
+  cursor: pointer;
+}
+.activeedit .container .btntwo {
+  color: #333333;
+  background-color: #FFC702;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.activeedit .container .btntwo:hover {
+  cursor: pointer;
+}
+
+.modalsdelete {
+  display: none;
+}
+
+.activesdelete {
+  background: var(--modal-back, rgba(51, 51, 51, 0.75));
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.activesdelete .containerInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #FAFAFA;
+  width: 500px;
+  height: 157px;
+  border-radius: 10px;
+  margin-top: 350px;
+}
+.activesdelete .containerInputs .tarif {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.activesdelete .container {
+  display: flex;
+  padding-left: 24px;
+}
+.activesdelete .container .btnfirst {
+  color: #FAFAFA;
+  background: #333333;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.activesdelete .container .btnfirst:hover {
+  cursor: pointer;
+}
+.activesdelete .container .btntwo {
+  color: #333333;
+  background-color: #FFC702;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.activesdelete .container .btntwo:hover {
   cursor: pointer;
 }
 

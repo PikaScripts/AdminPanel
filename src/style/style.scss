@@ -6,7 +6,9 @@ body {
   flex-direction: column;
   
 }
-
+.tabletarif{
+  margin-left: 200px;
+}
 .wrapper{
   display: flex;
   .panel{
@@ -15,7 +17,7 @@ body {
     width: 200px;
     display: flex;
     flex-direction: column;
-    
+    position: fixed;
     .circle{
       background-color: #333333;
       border: 1px solid #FAFAFA;
@@ -318,9 +320,9 @@ body {
     justify-content: start;
     background-color: #FAFAFA;
     width: 500px;
-    height: 460px;
+    height: 400px;
     border-radius: 10px;
-    margin: 190px;
+    margin: 220px;
     .tarif{
       text-align: center;
       font-size: 20px;
@@ -406,7 +408,7 @@ body {
     justify-content: start;
     background-color: #FAFAFA;
     width: 500px;
-    height: 148px;
+    height: 140px;
     border-radius: 10px;
     margin-top: 350px;
     .tarif{
@@ -450,6 +452,8 @@ body {
     }
   }
 }
+
+
 @import 'orders';
 @import 'statistic';
 @import 'products';
