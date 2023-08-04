@@ -2,6 +2,11 @@ let modalactive = document.querySelector('.activeadd')
 let openmodal = document.querySelector('.wrapper .containerbutton .btn')
 let modal = document.querySelector('.modaladd')
 let modalbtn = document.querySelector('.modaladd .container .btntwo')
+let modalbtnfirst = document.querySelector('.btnfirst')
+
+
+
+
 const addtarif = () =>{
     inputname.value = "";
     inputlicense.value = "";
@@ -11,15 +16,23 @@ const addtarif = () =>{
     modal.classList.add('activeadd')
     if(modal.classList.contains('activeadd')){
       document.body.style = 'overflow: hidden'
-  } else{
+  } else{ 
+      
       document.body.style = 'overflow: auto'
   }
+  modalbtnfirst.addEventListener('click', function(){
+    document.body.style = 'overflow: auto'
+  })  
+  
 }
+
+
 
 modalbtn.addEventListener('click', function(){
   if(modal.classList.contains('activeadd')){
     document.body.style = 'overflow: hidden'
 } else{
+    
     document.body.style = 'overflow: auto'
 }
 })
@@ -30,12 +43,14 @@ function noDigits(event) {
     }
 
 const closemodal = () =>{
+  
     modal.classList.remove('activeadd')
     modal.classList.add('modaladd')
     modaledit.classList.add('modaledit')
     modaledit.classList.remove('activeedit')
     modaldelete.classList.add('modaldelete')
     modaldelete.classList.remove('activedelete')
+
 }
 
 
@@ -125,12 +140,12 @@ inputlicense.addEventListener('input', updatePrice);
 inputtrack.addEventListener('input', updatePrice);
 
 
-let currentrow
+let blocks
 
 let modaledit = document.querySelector('.modaledit')
 let activeedit = document.querySelector('.activeedit')
 const editmodal = (element) =>{
-  currentrow = element.parentNode.parentNode;
+  blocks = element.parentNode.parentNode;
   modaledit.classList.remove('modaledit')
     modaledit.classList.add('activeedit')
     let editname = element.parentNode.parentNode.querySelector('.base.name').innerHTML
@@ -167,7 +182,7 @@ function edit() {
 
   let inputtrackvalues = parseFloat(inputtrackvalue);
   let inputlicensevalues = parseFloat(inputlicensevalue);
-  let check
+  let full
   
   if (!isNaN(inputlicensevalue) && !isNaN(inputtrackvalue)) {
         if (!inputtrackvalue || !inputlicensevalue || inputname.trim().length === 0) {
@@ -176,13 +191,13 @@ function edit() {
     
 
     if (inputlicensevalues <= 3) {
-      check = inputlicensevalues * (inputtrackvalues * 2000)
+      full = inputlicensevalues * (inputtrackvalues * 2000)
     } else if (inputlicensevalues <= 5) {
-      check = inputlicensevalues * (inputtrackvalues * 1800)
+      full = inputlicensevalues * (inputtrackvalues * 1800)
     } else if (inputlicensevalues > 5) {
-      check = inputlicensevalues * (inputtrackvalues * 1680)
+      full = inputlicensevalues * (inputtrackvalues * 1680)
     }
-    inputprices.value = check + "₸"
+    inputprices.value = full + "₸"
   } else {
     inputprices.value = ""
   }
@@ -217,7 +232,7 @@ function edit() {
   `
 
 
-    currentrow.innerHTML = editblocks
+    blocks.innerHTML = editblocks
   })
 
   modaledit.classList.add('modaledit')
@@ -235,7 +250,7 @@ function updatePrices() {
 
   let inputtrackvalues = parseFloat(inputtrackvalue);
   let inputlicensevalues = parseFloat(inputlicensevalue);
-  let check
+  let full
   
   if (!isNaN(inputlicensevalues) && !isNaN(inputtrackvalues)) {
     if (!inputtrackvalue || !inputlicensevalue) {
@@ -243,14 +258,14 @@ function updatePrices() {
     }
 
     if (inputlicensevalues <= 3) {
-      check = inputlicensevalues * (inputtrackvalues * 2000)
+      full = inputlicensevalues * (inputtrackvalues * 2000)
     } else if (inputlicensevalues <= 5) {
-      check = inputlicensevalues * (inputtrackvalues * 1800)
+      full = inputlicensevalues * (inputtrackvalues * 1800)
     } else if (inputlicensevalues > 5) {
-      check = inputlicensevalues * (inputtrackvalues * 1680)
+      full = inputlicensevalues * (inputtrackvalues * 1680)
     }
     let inputpricesa = document.querySelector('.activeedit .containerInput .price')
-    inputpricesa.value = check + "₸"
+    inputpricesa.value = full + "₸"
     
   }
 

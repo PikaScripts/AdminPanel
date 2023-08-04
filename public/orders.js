@@ -47,8 +47,6 @@ const changevse = () =>{
 
 }
 
-//
-
 let menss = document.querySelector('.wrapperr .baseContainer .container .menusa')
 let nameas = document.querySelector('.wrapperr .baseContainer .container .bases.proc')
 let svgss = document.querySelector('.wrapperr .baseContainer .container .izmens')
